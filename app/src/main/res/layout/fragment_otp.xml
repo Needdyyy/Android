@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fontTxt="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Enter your OTP code here"
+            android:gravity="center"
+            android:textSize="14sp"
+            />
+
+
+        <com.needyyy.app.views.AppEditText
+            android:id="@+id/pin_hidden_edittext"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="4"
+            android:password="true"
+            android:textColor="#00000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <com.needyyy.app.views.AppEditText
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxLength="1"
+                android:background="@drawable/otp_btn_default"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:id="@+id/edt_one"
+                android:inputType="number"
+                android:nextFocusRight="@+id/edt_two"/>
+            <com.needyyy.app.views.AppEditText
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxLength="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="@drawable/otp_btn_default"
+                android:id="@+id/edt_two"
+                android:nextFocusRight="@id/edt_three"/>
+            <com.needyyy.app.views.AppEditText
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:maxLength="1"
+                android:gravity="center"
+                android:background="@drawable/otp_btn_default"
+                android:nextFocusRight="@id/edt_four"
+                android:id="@+id/edt_three"
+                android:inputType="number"/>
+            <com.needyyy.app.views.AppEditText
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:maxLength="1"
+                android:gravity="center"
+                android:background="@drawable/otp_btn_default"
+                android:id="@+id/edt_four"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:text="DONE"
+            android:id="@+id/btn_done"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_login_text"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resendotp"
+            android:layout_marginTop="20dp"
+            android:text="@string/resendotp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/themecolor"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

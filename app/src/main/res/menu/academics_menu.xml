@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/school"
+        android:title="School" />
+    <item
+        android:id="@+id/Grad"
+        android:title="Graduation" />
+    <item
+        android:id="@+id/post_grad"
+        android:title="Post Graduation" />
+
+</menu>

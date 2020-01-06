@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/dp10"
+    android:padding="@dimen/dp10"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.needyyy.app.views.AppTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/globalpost"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textStyle="bold"
+        />
+    <com.needyyy.app.views.AppTextView
+        android:id="@+id/captiontext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textIsSelectable="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp5"
+        android:text="@string/globaltext"/>
+
+    <com.needyyy.app.views.AppTextView
+        android:id="@+id/postname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/dp5"
+        android:textIsSelectable="true"
+        android:gravity="right"
+        android:textColor="@color/themecolor"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="@string/name"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/dp2"
+    android:orientation="horizontal">
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp5">
+<RelativeLayout
+    android:id="@+id/imageRL"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_media"
+        android:layout_width="@dimen/extralarge_image_size"
+        android:layout_height="@dimen/extralarge_image_size"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_blue_curve" />
+
+    <ImageView
+        android:id="@+id/playIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_play_arrow"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_toRightOf="@id/imageIV"
+        android:alpha="0.8"
+        android:maxHeight="@dimen/dp90"
+        android:maxWidth="@dimen/dp200"
+        android:padding="@dimen/dp5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp15"
+        android:visibility="gone" />
+</RelativeLayout>
+
+<ImageView
+    android:id="@+id/deleteIV"
+    android:layout_width="@dimen/dp20"
+    android:layout_height="@dimen/dp20"
+    android:layout_gravity="end"
+    android:layout_alignRight="@id/imageRL"
+    android:src="@android:drawable/ic_delete" />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

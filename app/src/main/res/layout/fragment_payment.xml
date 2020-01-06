@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/item_view"
+    android:background="@color/color_gray_bg"
+    tools:context=".Modules.adsAndPage.fragment.PaymentActivity">
+
+    <TextView
+        android:id="@+id/tv_paytm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:text="PayTM"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/tv_razorpay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:text="Razor Pay"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>

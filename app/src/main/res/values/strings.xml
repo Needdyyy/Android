@@ -1,0 +1,423 @@
+<resources>
+    <integer name="pref_default_int_value">0</integer>
+    <integer name="pref_frame_rate_min_value">0</integer>
+    <integer name="pref_frame_rate_max_value">30</integer>
+    <integer name="pref_frame_rate_stepSize">5</integer>
+    <integer name="pref_startbitratevalue_min_value">0</integer>
+    <integer name="pref_startbitratevalue_max_value">2000</integer>
+    <integer name="pref_startbitratevalue_step_size">100</integer>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <integer name="pref_answer_time_interval_min_value">15</integer>
+    <integer name="pref_answer_time_interval_max_value">90</integer>
+    <integer name="pref_answer_time_interval_step_size">5</integer>
+    <integer name="pref_disconnect_time_interval_min_value">10</integer>
+    <integer name="pref_disconnect_time_interval_max_value">90</integer>
+    <integer name="pref_disconnect_time_interval_step_size">5</integer>
+
+    <integer name="pref_dialing_time_interval_min_value">3</integer>
+    <integer name="pref_dialing_time_interval_max_value">10</integer>
+    <integer name="pref_dialing_time_interval_step_size">1</integer>
+    <string name="app_name">Needyyy</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+
+    <!--//**********profile**********************//-->
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="already_have_an_account_login">Already have an account? </string>
+    <string name="content_description">Title</string>
+    <string name="current_location">sign in</string>
+    <string name="password">Password</string>
+    <string name="emailid">Email ID</string>
+    <string name="fingerprint_text">Create your Pincode or Fingerprint \n for account</string>
+    <string name="signin">SIGN IN</string>
+    <string name="forgetpassword">Forgot Password?</string>
+    <string name="resendotp">Resend otp</string>
+    <string name="home">Home</string>
+    <string name="feeds">Feed</string>
+    <string name="add_post">Post</string>
+    <string name="knocks">Knocks</string>
+    <string name="profile">Profile</string>
+    <string name="profile_name">Profile_Name</string>
+    <string name="profile_code">Profile_Code</string>
+    <string name="add_bio">ADD BIO</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="both">Both</string>
+    <string name="relationship">Relationship</string>
+    <string name="relationship_status">RELATIONSHIP STATUS</string>
+    <string name="search">Search</string>
+    <string name="interested_in">INTERESTED IN</string>
+    <string name="friends">FRIENDS</string>
+    <string name="nickname">Nickname</string>
+    <string name="dob">DOB</string>
+    <string name="gender">GENDER</string>
+    <string name="basic_info">BASIC INFO</string>
+    <string name="add_current_city">Add Current City</string>
+    <string name="add_hometown">Add Hometown</string>
+    <string name="places_you_ve_lived">PLACES YOU\'VE LIVED</string>
+    <string name="add_school">Add School</string>
+    <string name="college_university">College/University</string>
+    <string name="education">EDUCATION</string>
+    <string name="profession">PROFESSION</string>
+    <string name="next">NEXT</string>
+    <string name="description">Description...</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="open_for_dating">OPEN FOR DATING</string>
+    <string name="never">Never</string>
+    <string name="maybe">May be</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="city">City</string>
+    <string name="validotpmsg">Please enter a valid OTP</string>
+    <string name="newcode">New Pincode</string>
+    <string name="confirmcode">Confirm Pincode</string>
+    <string name="pinnotmatch">Pin code did\'t match.</string>
+    <string name="internetmsg">Please check your internet connection or try again later</string>
+    <string name="enteremail">email field can\'t empty</string>
+    <string name="entervalidemail">please enter valid email</string>
+    <string name="enterpassword">Password field can\'t empty</string>
+    <string name="entervalidpassword">Your password must be at least 8 characters long</string>
+    <string name="name">Amritanshu singh</string>
+    <string name="social">Social</string>
+    <string name="dating">Dating</string>
+    <string name="chatgroup">Chat Group</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="nearbyfriend">Nearby Friend</string>
+
+    <string name="addmanager">Ads Manager</string>
+    <string name="page">Page</string>
+    <string name="postsearch">Post</string>
+    <string name="Usersearch">User</string>
+    <string name="mypages">My Pages</string>
+    <string name="mywallet">My Wallet</string>
+    <string name="aboutus">About Us</string>
+    <string name="notifications">Notifications</string>
+    <string name="publictext">Public</string>
+    <string name="privatetext">Private</string>
+    <string name="privacy">Privacy</string>
+    <string name="setting">Setting</string>
+    <string name="Edit">Edit</string>
+    <string name="helpandsupport">Help And Support</string>
+    <string name="logout">Logout</string>
+    <string name="knock_request">KNOCK REQUEST(0)</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="JWT">jwt</string>
+    <string name="Jwt">Jwt</string>
+    <string name="ok">Ok</string>
+    <string name="done">Done</string>
+    <string name="pdf_extension">.pdf</string>
+    <string name="doc_extension">.doc</string>
+    <string name="xls_extension">.xls</string>
+    <string name="file_format_error">This file format is not supported</string>
+    <string name="add_post_errmsg">Please type minimum 5 letters or add some image to create post</string>
+    <string name="choose_image">Choose your image from</string>
+    <string name="create_page">Create Page</string>
+    <string name="add_profile">Add Profile Photo</string>
+    <string name="choose_category">Choose Categories for \n Your Page</string>
+    <string name="category">Category</string>
+    <string name="user_suggested">Use Suggested Categories</string>
+    <string name="sports">Sports</string>
+    <string name="music">Music</string>
+    <string name="daily_news">Daily news</string>
+    <string name="fashion">Fashion</string>
+    <string name="bannerimgmsg">Please add Banner Image</string>
+    <string name="bannerprofilemsg">Please Add Page Profile Image</string>
+    <string name="titlemsg">Title Field can\'t be empty</string>
+    <string name="descriptionmsg">Description field can\'t be empty</string>
+    <string name="category_msg">Category field can\'t be empty</string>
+    <string name="page_create_message">Your Page Created Successfully.Do you want to promote this page?</string>
+    <string name="edit">Edit</string>
+    <string name="renew">Renew</string>
+    <string name="tag">Tag</string>
+    <string name="skills">SKILLS</string>
+    <string name="apply">Apply</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="likes">Likes</string>
+    //fingerPrint
+    <string name="comments">Comments</string>
+    <string name="write_comment">Write Comment Here</string>
+    <string name="write_comment2">Write Something...</string>
+    <string name="post">Post</string>
+    <string name="chat">Chat</string>
+    <string name="Interesting">Interesting</string>
+    <string name="choose_own">Choose Your Own</string>
+    <string name="enteramount">Enter Amount</string>
+    <string name="reply">Reply</string>
+    <string name="available_balance">Available Balance:</string>
+    <string name="add_money">Add Money</string>
+    <string name="enterprice">Enter price</string>
+    <string name="letsstart">Let\'s start!</string>
+    <string name="putfingermsg">Put your finger on the fingerprint \nsensor. Lift after you feel a vibration.</string>
+    <string name="authenticate_fingerprint">Error authenticating fingerprint</string>
+    <string name="auth_successful">Your Process is Completed</string>
+    <string name="Unknown_permission_request">Unrecognized permission request</string>
+    <string name="permission_refused">" User refused Fingerprint permission"</string>
+    <string name="phone_number_hint">Phone number</string>
+    <string name="address_hint">Address</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="username_hint">Username</string>
+    <string name="with_fingerprint">With Fingerprint</string>
+    <string name="with_fingerprint_and_password">With Fingerprint and Password</string>
+    <string name="login_with_fingerprint">LOGIN WITH FINGERPRINT</string>
+    <string name="search_here">Search here</string>
+    <string name="change_password">Change Password</string>
+    <string name="enable_fingerPrint">Enable fingerprint</string>
+    <string name="change_pin">Change pin</string>
+    <string name="sharenow">Share now</string>
+    <string name="sendmessagetitle">if you wanna say something then \ntype message otherwise knock me.</string>
+    <string name="globalpost">Global Post</string>
+    <string name="globaltext">There may be times when we are powerless to prevent injustice, but there must never a time when we fail to protest</string>
+
+
+    <string name="engaged">Got Engaged</string>
+    <string name="gpsnotenablemsg">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="gps_setting">GPS is settings</string>
+
+
+    <string name="location_permission">Location Permissions is required for this app</string>
+    <string name="settings">Settings</string>
+
+
+    <!-- Dialogs strings. -->
+    <string name="cancel">Cancel</string>
+    <string name="alert">Alert</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="myfriend">My Friend</string>
+    <string name="tagfriend">Tag friend</string>
+    <string name="checkin">Check in</string>
+    <string name="addcover">Add cover photo</string>
+
+
+    <!-- Errors strings. -->
+    <string name="dialog_message">Update your app</string>
+    <string name="dialog_title">alert</string>
+    <string name="warning_need_token">You need to request an access token first</string>
+    <string name="code">Code: %1$s</string>
+    <string name="token">Access Token: %1$s</string>
+
+    <string name="splash_app_title">Video &amp; Audio \nChat Sample</string>
+    <string name="splash_create_session_error">Create session errors:</string>
+
+    <string name="dlg_signal_error">Disconnected… Please check your Internet connection!</string>
+    <string name="dlg_login">Login…</string>
+    <string name="dlg_sign_in">Sign In…</string>
+
+    <string name="dlg_updating_user">Updating user…</string>
+
+    <string name="dlg_creating_new_user">Creating new user…</string>
+    <string name="dlg_logout">Logout…</string>
+
+    <string name="dlg_loading_opponents">Loading opponents…</string>
+
+    <!--menu-->
+    <string name="error_max_opponents_count">You can select up to %d opponents</string>
+
+    <string name="sign_up_error">Error creating new user, please try again</string>
+    <string name="sign_in_error_with_error">Sign In error. Error</string>
+    <string name="sign_in_error_without_error">Sign In error</string>
+    <string name="logout_user_with_error">Logout user error. Error</string>
+    <string name="error_empty_login">Login can not be empty</string>
+
+
+    <!--action bar-->
+    <string name="error_empty_chat_room_name">Chat room name can not be empty</string>
+    <string name="login_chat_login_error">Login Chat error. Please relogin. Error</string>
+    <string name="update_user_error">Update user error. Error</string>
+    <string name="loading_users_error">Loading users error. Error</string>
+    <string name="permission_unavailable">%s is not available now!</string>
+
+
+    <string name="field_name_user_name">User name</string>
+    <string name="field_name_chat_room_name">Chat room name</string>
+    <string name="error_name_must_not_contain_special_characters_from_app">%1$s must contain 3 &#8212; %2$s alphanumeric Latin characters without space, the first char must be a letter</string>
+    <string name="action_start_login">Done</string>
+    <string name="action_screen_share">Screen share</string>
+    <string name="action_update_opponens_list">Update opponents list</string>
+    <string name="action_logout">Logout</string>
+
+
+    <string name="action_start_video_call">Video call</string>
+    <string name="action_start_audio_call">Audio call</string>
+    <string name="actionbar_title_settings">Settings</string>
+    <string name="title_login_activity">Enter to chat</string>
+    <string name="subtitle_text_logged_in_as">Logged in as %s</string>
+    <string name="title_one_user_selected">%s user selected</string>
+    <string name="tile_many_users_selected">%s users selected</string>
+    <string name="incoming_call">Burzz Incoming Call</string>
+
+    <string name="also_on_call">Also on call:</string>
+    <string name="edit_opponents_list">Edit opponents list</string>
+    <string name="incoming_audio_call">Burzz Incoming Audio Call</string>
+    <string name="incoming_video_call">Burzz Incoming Video Call</string>
+    <string name="outgoing_audio_video_call_title">%s\n\nRinging</string>
+    <string name="user_list_on_call">User 1, User 2, User 3, User 4, User 5, User 6</string>
+
+    <string name="opponent_pending">Pending</string>
+    <string name="opponent_closed">Closed</string>
+    <string name="text_incoming_audio_call">Burzz Incoming Audio Call</string>
+
+    <string name="text_incoming_video_call">Burzz Incoming Video Call</string>
+
+    <string name="text_status_connect">Connect…</string>
+    <string name="text_status_checking">Checking…</string>
+
+    <string name="text_status_connected">Connected</string>
+
+
+    <!-- Settings strings. -->
+    <string name="text_status_disconnected">Disconnected</string>
+    <string name="text_status_rejected">Rejected</string>
+
+    <string name="text_status_no_answer">No answer</string>
+    <string name="text_status_hang_up">Hung up</string>
+
+    <string name="text_status_closed">Closed</string>
+    <string name="text_status_time_out">Time Out</string>
+    <string name="text_status_failed">Failed</string>
+    <string name="text_welcoming_message">Please enter username and chat room name. \nYou can join existed chat room.</string>
+
+    <string name="hint_user_name">User name</string>
+    <string name="hint_chat_room_name">Chat room name</string>
+    <string name="text_select_user_to_call">Select users you want to call</string>
+    <string name="call_was_stopped_connection_lost">Call was stopped because connection was lost</string>
+    <string name="connection_lost">Connection lost</string>
+    <string name="text_push_notification_message">"%s is calling you"</string>
+
+    <string name="title_video_category">Video</string>
+    <string name="title_call_settings_category">Call Settings</string>
+    <string name="pref_default_value">Default</string>
+    <string name="pref_default_camera_key">default_camera_preference</string>
+
+    <string name="pref_default_camera_title">Default Camera</string>
+    <string name="pref_default_camera_dlg">Select default camera</string>
+    <string name="pref_default_camera_default">0</string>
+    <string name="pref_frame_rate_key">frame_rate</string>
+
+    <string name="pref_frame_rate_title">Frame Rate (0&#8211;30)</string>
+    <string name="pref_frame_rate_default">0</string>
+    <string name="pref_resolution_key">resolution_preference</string>
+    <string name="pref_resolution_title">Video Format</string>
+    <string name="pref_resolution_dlg">Enter RTC local video resolution</string>
+    <string name="pref_resolution_default">-1</string>
+
+    <string name="pref_startbitrate_key">startbitrate_preference</string>
+    <string name="pref_startbitrate_title">Start bitrate setting</string>
+    <string name="pref_startbitrate_dlg">Start bitrate setting</string>
+    <string name="pref_startbitrate_default">Default</string>
+    <string name="pref_startbitratevalue_key">startbitratevalue_preference</string>
+
+    <string name="pref_startbitratevalue_title">Bandwidth (0&#8211;2000)</string>
+    <string name="pref_startbitratevalue_default">0</string>
+    <string name="pref_disable_built_in_aec_key">disable_built_in_aec_preference</string>
+    <string name="pref_disable_built_in_aec_title">Disable built-in AEC</string>
+
+    <string name="pref_disable_built_in_aec_dlg">Disable built-in AEC</string>
+    <string name="pref_disable_built_in_aec_default">false</string>
+    <string name="pref_built_in_aec_not_available">Built-in AEC is not available</string>
+    <string name="pref_opensles_key">opensles_preference</string>
+
+    <!--Call Settings-->
+
+    <string name="pref_opensles_title">Use OpenSL ES for audio playback</string>
+    <string name="pref_opensles_dlg">Use OpenSL ES for audio playback</string>
+    <string name="pref_opensles_default">false</string>
+    <string name="pref_noaudioprocessing_key">audioprocessing_preference</string>
+    <string name="pref_noaudioprocessing_title">Disable audio processing</string>
+    <string name="pref_noaudioprocessing_dlg">Disable audio processing pipeline</string>
+
+    <string name="pref_noaudioprocessing_default">false</string>
+    <string name="pref_answer_time_interval_key">answer_time_interval</string>
+    <string name="pref_answer_time_interval_title">Answer Time Interval (15&#8211;90s)</string>
+    <string name="pref_answer_time_interval_default_value">60</string>
+    <string name="pref_disconnect_time_interval_key">disconnect_time_interval</string>
+    <string name="pref_disconnect_time_interval_title">Disconnect Time Interval (10&#8211;90s)</string>
+
+    <string name="pref_disconnect_time_interval_default_value">10</string>
+    <string name="pref_dialing_time_interval_key">Dialing_time_interval</string>
+    <string name="pref_dialing_time_interval_title">Dialing Time Interval (3&#8211;10s)</string>
+    <string name="pref_dialing_time_interval_default_value">5</string>
+    <string name="pref_videocodec_key">videocodec_preference</string>
+    <string name="pref_videocodec_title">Default video codec</string>
+
+    <string name="pref_videocodec_dlg">Select default video codec</string>
+    <string name="pref_videocodec_default">0</string>
+    <string name="pref_hwcodec_key">hwcodec_preference</string>
+    <string name="pref_hwcodec_title">Video codec hardware acceleration</string>
+
+    <string name="pref_hwcodec_default">true</string>
+    <string name="pref_value_enabled">Enabled</string>
+    <string name="pref_value_disabled">Disabled</string>
+
+    <string name="pref_room_server_url_key">room_server_url_preference</string>
+    <string name="pref_room_server_url_title">Room server URL.</string>
+
+    <string name="pref_room_server_url_dlg">Enter a room server URL.</string>
+    <string name="pref_room_server_url_default" translatable="false">https://apprtc.appspot.com</string>
+    <string name="pref_displayhud_key">displayhud_preference</string>
+    <string name="pref_displayhud_title">Display call statistics.</string>
+
+    <string name="pref_displayhud_dlg">Display call statistics.</string>
+    <string name="pref_displayhud_default" translatable="false">false</string>
+    <string name="pref_audiocodec_key">pref_audio_codec</string>
+    <string name="pref_audiocodec_title">Default audio codec</string>
+    <string name="pref_audiocodec_def">ISAC</string>
+    <string name="pref_audiocodec_dlg">Select default audio codec</string>
+    <string name="pref_version">QuickBlox WebRTC\nBuild version 1.12</string>
+    <string name="btn_screen_capture">screenShot</string>
+    <string name="accepted">Accepted</string>
+    <string name="connection_was_lost">Connection was lost</string>
+    <string name="opponents">and %s other</string>
+    <string name="opponent">and %s </string>
+
+    <string name="ringing">Ringing</string>
+    <string name="stop_share">Stop</string>
+    <string name="camera_swicth_failed">\"Failed switch camera\"</string>
+    <string name="sender_id">761750217637</string>
+    <string name="versionName">v1</string>
+
+    <string name="please_wait">Please wait…</string>
+
+    <string name="dlg_error">Error</string>
+
+    <string name="dlg_ok">OK</string>
+
+    <string name="dlg_cancel">Cancel</string>
+    <string name="dlg_loading">Loading…</string>
+    <string name="dlg_choose_image_from">Select photo from…</string>
+    <string name="dlg_retry">Retry</string>
+    <string name="init_configs_error">Initializing configs error</string>
+    <string name="no_internet_connection">No internet connection</string>
+
+    <string name="splash_app_version">v %s</string>
+
+    <string name="error_parsing_configs">Parsing sample\'s configs error</string>
+
+    <string name="create_group">Create Group</string>
+
+    <string name="promote">Do you want to reveal your Profile?</string>
+
+    <string-array name="gender_array">
+        <!--<item>Select Gender</item>-->
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="relation_array">
+        <item>Single</item>
+        <item>In a relationship</item>
+        <item>Engaged</item>
+        <item>Married</item>
+        <item>In an open relationship</item>
+        <item>It\'s Complicated</item>
+        <item>Separated</item>
+        <item>Divorced</item>
+        <item>Widowed</item>
+    </string-array>
+</resources>

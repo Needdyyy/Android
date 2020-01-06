@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:id="@+id/post_main"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorAccent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_profile_pic"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="@dimen/dp100"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp25"
+                    android:src="@drawable/needyy"/>
+
+                <TextView
+                    android:id="@+id/tv_profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:text="Amritanshu Singh"/>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_add_post"
+                style="@style/HintTextStyle"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_add_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp100"
+                    android:hint="Write a message..."
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:imeOptions="actionDone"
+                    android:imeActionLabel="Done"
+                    android:ellipsize="end"
+                    android:paddingStart="@dimen/dp10"
+                    android:paddingEnd="@dimen/dp10"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#333333" />
+
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+
+                    android:id="@+id/rv_media_container">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+                <ImageView
+                    android:id="@+id/iv_uploaded"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="@dimen/dp100"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    android:src="@drawable/needyy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:text="1 more"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+
+            <com.nex3z.flowlayout.FlowLayout
+                android:id="@+id/taggedpeopleFL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:flChildSpacing="3dp"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                app:flChildSpacingForLastRow="align"
+                app:flRowSpacing="3dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_add_extra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/bg_gray_curve"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/camera"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/dp15"
+                    android:paddingBottom="@dimen/dp15"/>
+
+                <ImageView
+                    android:id="@+id/iv_checkin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/checkin"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/dp15"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/dp15"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/tag"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/dp15"
+                    android:paddingBottom="@dimen/dp15"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_post_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_login_text"
+                android:layout_marginTop="@dimen/dp70"
+                android:layout_marginBottom="@dimen/dp70"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                android:text="POST"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

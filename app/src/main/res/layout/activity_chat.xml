@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:id="@+id/activity_chatview"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/view_background"-->
+<!--    android:clickable="true"-->
+<!--    xmlns:jwp="http://schemas.android.com/apk/res-auto"-->
+<!--    android:orientation="vertical">-->
+<!--    <include layout="@layout/toolbar_chat"-->
+<!--        android:id="@+id/toolbar"></include>-->
+<!--    <RelativeLayout-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/rl_parent"-->
+<!--        android:layout_below="@+id/toolbar"-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:orientation="vertical">-->
+<!--        <android.support.v7.widget.RecyclerView-->
+<!--            android:id="@+id/recycler_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_above="@+id/rltv"-->
+<!--            android:background="@color/color_gray_bg"-->
+<!--            app:stackFromEnd="true"/>-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rltv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_margin="@dimen/dp15"-->
+<!--            android:padding="@dimen/dp5"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:background="@drawable/sendchat"-->
+<!--            >-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/send_button"-->
+<!--                android:background="@null"-->
+<!--                android:src="@drawable/chat_send_icon"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:padding="4dp"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp" />-->
+
+<!--            <EditText-->
+<!--                android:layout_marginLeft="@dimen/dp10"-->
+<!--                android:id="@+id/et_message"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:hint="Type a message"-->
+<!--                android:layout_toLeftOf="@+id/send_button"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:maxLines="1"-->
+<!--                android:background="@null"-->
+<!--                />-->
+<!--        </RelativeLayout>-->
+
+<!--    </RelativeLayout>-->
+<!--</RelativeLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/import_activity_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></include>
+
+</RelativeLayout>
+

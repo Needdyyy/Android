@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:text="Choose categories for \n your page" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"/>
+
+    <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:layout_width="match_parent"
+        android:id="@+id/et_category"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:hint="Select a category"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:text="Use suggested categories" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <com.needyyy.app.views.AppTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_stroke"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginRight="@dimen/dp10"
+            android:id="@+id/btn_sports"
+            android:padding="@dimen/dp10"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:text="Sports"/>
+
+        <com.needyyy.app.views.AppTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_stroke"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:padding="@dimen/dp10"
+            android:id="@+id/btn_music"
+
+            android:layout_marginLeft="@dimen/dp10"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:text="Music"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <com.needyyy.app.views.AppTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_stroke"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginRight="@dimen/dp10"
+            android:padding="@dimen/dp10"
+            android:textAlignment="center"
+            android:id="@+id/btn_daily_news"
+
+            android:textColor="@android:color/black"
+            android:text="Daily news"/>
+
+        <com.needyyy.app.views.AppTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_stroke"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:padding="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textAlignment="center"
+            android:id="@+id/btn_fashions"
+
+            android:textColor="@android:color/black"
+            android:text="Fashion"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"/>
+
+    <com.needyyy.app.views.AppTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:background="@drawable/bg_login_text"
+        android:paddingTop="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:text="NEXT"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:id="@+id/btn_next"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"/>
+
+</LinearLayout>

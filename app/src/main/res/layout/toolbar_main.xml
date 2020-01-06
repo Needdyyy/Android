@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/themecolor"
+    android:fitsSystemWindows="true"
+    app:contentInsetLeft="@dimen/toolbar_content_inset_start"
+    app:contentInsetStart="@dimen/toolbar_content_inset_start"
+    app:layout_scrollFlags="enterAlways"
+    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/toolbar_back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/content_description"
+            android:padding="@dimen/dp10"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp5"
+            android:visibility="visible"
+            android:src="@drawable/arow"
+            />
+        <ImageView
+            android:id="@+id/toolbar_menu"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/content_description"
+            android:padding="@dimen/dp10"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp5"
+            android:src="@drawable/menu"
+            />
+
+
+        <com.needyyy.app.views.AppTextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:layout_toEndOf="@+id/btn_back"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:padding="@dimen/dp10"
+            android:text="@string/current_location"
+            android:textColor="@color/windowbackground"
+            android:textSize="@dimen/sp20" />
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/toolbar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxWidth="280dp"
+            android:queryHint="@string/search_here"
+            android:src="@drawable/search"
+            android:theme="@style/Custom.Searching" />
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_height="15dp"
+            android:text="0"
+            android:layout_marginTop="@dimen/dp5"
+            android:textSize="10sp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/backgroundnotification"
+            android:layout_marginRight="5dp"
+            android:visibility="visible"
+            />
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/toolbar_notification"
+                android:padding="@dimen/dp10"
+                android:src="@drawable/notification"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp10"
+                android:id="@+id/toolbar_chat"
+                android:src="@drawable/chat"/>
+
+            <TextView
+                android:id="@+id/chatcount"
+                android:layout_width="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_height="10dp"
+                android:text=""
+                android:layout_marginTop="@dimen/dp5"
+                android:textSize="10sp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/backgroundnotification"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp10"
+            android:id="@+id/video_call"
+            android:visibility="gone"
+            android:src="@drawable/video_calling"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp10"
+            android:id="@+id/toolbar_filter"
+            android:src="@drawable/filter"/>
+        <Button
+            android:id="@+id/toolbar_post"
+            android:layout_width="@dimen/dp80"
+            android:visibility="visible"
+            android:textColor="@color/colorAccent"
+            android:layout_height="35dp"
+            android:layout_marginRight="@dimen/dp8"
+            android:background="@drawable/post_botton"
+            android:text="Post"/>
+
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

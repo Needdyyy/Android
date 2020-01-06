@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/themecolor"
+    android:fitsSystemWindows="true"
+    app:contentInsetLeft="@dimen/toolbar_content_inset_start"
+    app:contentInsetStart="@dimen/toolbar_content_inset_start"
+    app:layout_scrollFlags="enterAlways"
+    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/content_description"
+            android:padding="@dimen/dp10"
+            android:layout_marginStart="@dimen/dp5"
+            android:src="@drawable/arow"
+            />
+
+        <com.needyyy.app.views.AppTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/btn_back"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:layout_marginLeft="@dimen/dp30"
+            android:text="@string/tag"
+            android:textColor="@color/windowbackground"
+            android:textSize="@dimen/sp20" />
+        <com.needyyy.app.views.AppTextView
+            android:id="@+id/tv_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp30"
+            android:text="@string/done"
+            android:textColor="@color/windowbackground"
+            android:textSize="@dimen/sp20" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

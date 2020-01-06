@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp100"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_profile_pic"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp10"
+        android:src="@drawable/needyy" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Surya Bihari Singh"
+            android:layout_marginTop="@dimen/dp20"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10">
+
+            <Button
+                android:id="@+id/decline_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/bg_gray_curve"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/colorText_light_gray"
+                android:text="@string/decline"/>
+
+            <Button
+                android:id="@+id/accept_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp30"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="@string/accept"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp14"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_blue_curve"/>
+
+            <TextView
+                android:id="@+id/tv_request_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request status"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp15"
+                android:layout_marginLeft="@dimen/dp10"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_hight"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/devider_line_color"/>
+    </LinearLayout>
+
+</LinearLayout>

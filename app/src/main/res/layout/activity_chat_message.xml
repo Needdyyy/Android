@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <include
+        android:id="@+id/action_bar_layout"
+        layout="@layout/custom_action_bar_layout"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rltv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/dp5"
+        android:padding="@dimen/dp5"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sendchat"
+        >
+
+    <ImageButton
+        android:id="@+id/send_button"
+        android:background="@null"
+        android:src="@android:drawable/ic_menu_send"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:layout_marginLeft="@dimen/dp10"
+        android:id="@+id/edt_content"
+        android:layout_width="match_parent"
+        android:hint="Enter your message"
+        android:layout_toLeftOf="@+id/send_button"
+        android:layout_height="50dp"
+        android:maxLines="1"
+        android:background="@null"
+        />
+    </RelativeLayout>
+    <ListView
+        android:layout_below="@+id/action_bar_layout"
+        android:layout_above="@+id/rltv"
+        android:id="@+id/list_of_message"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        android:layout_marginBottom="16dp"
+        android:stackFromBottom="true"
+        android:layout_alignParentLeft="true"></ListView>
+
+</RelativeLayout>

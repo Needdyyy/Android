@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp2"
+    android:background="@drawable/people_tag_textview_bg"
+    android:padding="@dimen/dp5"
+    android:paddingLeft="@dimen/dp3"
+    android:paddingTop="@dimen/dp3"
+    android:paddingRight="@dimen/dp3"
+    android:paddingBottom="@dimen/dp3">
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:alpha="0.7"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/dp2"
+        android:paddingRight="@dimen/dp2"
+        android:text="Hobbies"
+        android:textColor="#000"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/deletehob"
+        android:layout_width="@dimen/dp15"
+        android:layout_height="@dimen/dp15"
+        android:layout_toRightOf="@id/tv_search"
+        android:src="@android:drawable/ic_delete" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rltag"
+    tools:context=".Modules.Home.Activities.TagSelection">
+
+    <include
+        android:id="@+id/toolbar_tags"
+        layout="@layout/toolbar_tagselection"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_below="@+id/toolbar_tags"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp4"
+        android:paddingRight="@dimen/dp4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Select Category"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/usersCategoryRG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp7"
+            android:visibility="gone"
+            android:padding="@dimen/dp4">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/mmeExpertRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="myfriends"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/mentorRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="yourFriends"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/followingRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I follow"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/usersListRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:overScrollMode="never"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10" />
+
+        <TextView
+            android:id="@+id/errorTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp4"
+            android:text=""
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

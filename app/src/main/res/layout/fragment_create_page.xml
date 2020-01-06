@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/addcover"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:scaleType="fitXY"
+                android:id="@+id/img_page_banner"
+                android:src="@drawable/add_cover_photo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+                <ImageView
+                    android:layout_width="@dimen/dp80"
+                    android:layout_height="@dimen/dp80"
+                    android:id="@+id/img_add_pagephoto"
+                    android:padding="@dimen/dp5"
+                    android:src="@drawable/add_profile_photo" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="@string/add_profile"/>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/HintTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp10"
+                android:textColorHint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:gravity="center_vertical"
+                    android:hint="Title.."
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/dp10"
+                    android:id="@+id/et_page_title"
+                    android:paddingEnd="@dimen/dp10"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#333333" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/HintTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp10"
+                android:textColorHint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:gravity="center_vertical"
+                    android:hint="Website.."
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/dp10"
+                    android:id="@+id/website"
+                    android:paddingEnd="@dimen/dp10"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#333333" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/HintTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp10"
+                android:textColorHint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:gravity="center_vertical"
+                    android:hint="Contact.."
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/dp10"
+                    android:id="@+id/contact"
+                    android:inputType="number"
+                    android:paddingEnd="@dimen/dp10"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#333333" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/HintTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp10"
+                android:textColorHint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:gravity="center_vertical"
+                    android:hint="Address.."
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/dp10"
+                    android:id="@+id/address"
+                    android:paddingEnd="@dimen/dp10"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#333333" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/HintTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:textColorHint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp80"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:hint="@string/description"
+                    android:maxLines="1"
+                    android:id="@+id/et_page_description"
+                    android:paddingStart="@dimen/dp10"
+                    android:paddingEnd="@dimen/dp10"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#333333" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/bg_login_text"
+                android:paddingTop="@dimen/dp15"
+                android:paddingBottom="@dimen/dp15"
+                android:text="@string/next"
+                android:id="@+id/btn_next"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

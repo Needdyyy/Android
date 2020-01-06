@@ -1,0 +1,348 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#005F91</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+    </style>
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#005F91</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+
+    <style name="PopupMenu" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:popupBackground">@color/color_gray_bg</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/themecolor</item>
+        <item name="boxStrokeWidth">0.5dp</item>
+
+        <!--<item name="android:textColorHint">@color/colorAccent</item>-->
+
+        <item name="boxCornerRadiusBottomEnd">@dimen/dp50</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/dp50</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/dp50</item>
+        <item name="boxCornerRadiusTopStart">@dimen/dp50</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+
+        <item name="android:colorControlNormal">@color/color_gray_bg</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:colorControlHighlight">@color/colorAccent</item>
+
+        <!--<item name="colorControlNormal">@color/colorAccent</item>-->
+        <!--<item name="colorControlActivated">@color/colorAccent</item>-->
+        <!--<item name="android:colorControlHighlight">@color/colorAccent</item>-->
+
+    </style>
+
+    <style name="HintTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/themecolor</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+    </style>
+
+    <style name="text_in_layout_hint_Style">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+    </style>
+
+    <style name="MainScreenTextViewStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:textColor">@color/colorText_light_gray</item>
+    </style>
+    <!--<style name="AppthemeEditext" parent="@android:style/TextAppearance">-->
+    <!--<item name="colorControlNormal">@color/design_default_color_primary</item>-->
+    <!--<item name="colorControlActivated">@color/colorAccent</item>-->
+    <!--<item name="colorControlHighlight">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="BottomNavigation">
+        <item name="android:background">@color/white</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="itemBackground">@drawable/bottom_navigation_selector</item>
+        <item name="itemIconTint">@drawable/bottom_navigation_selector</item>
+        <item name="itemTextColor">@drawable/selector_bottombar_item</item>
+
+    </style>
+
+    <style name="datepickerlolipop" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="datepickerkitkat" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="OtpWidget" />
+
+    <style name="OtpWidget.OtpView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Theme.TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="tabSelectedTextColor">@color/white</item>
+    </style>
+
+    <style name="SortFilterTitleTextView" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:textColor">@color/filter_title_text_color</item>
+    </style>
+
+    <style name="SortFilterTextView" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Profile.Text.Style" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:textColor">@color/filter_title_text_color</item>
+    </style>
+    <style name="search_style" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">@dimen/dp10</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:drawableStart">@drawable/search_gray</item>
+        <item name="android:background">@drawable/canvas_search_bar_bg</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:textColor">@color/text_color_lite</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="Custom.Searching" parent="AppTheme.AppBarOverlay">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:icon">@drawable/search</item>
+        <item name="android:searchIcon">@drawable/search</item>
+        <item name="android:textColorHint">#60FFFFFF</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+    </style>
+
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="AppTheme2">
+        <item name="android:background">@color/black</item>
+        <item name="colorPrimary">@color/black</item>
+
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="colorPrimaryDark">@color/black</item>
+        <!--item name="actionBarTheme">@style/DarkActionBarTheme</item-->
+    </style>
+
+    <style name="VideoChatTheme" parent="AppTheme2">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="colorControlNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="ListItemIconStyle">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:layout_marginRight">@dimen/list_item_side_margin</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="CallerAvatar">
+        <item name="android:layout_width">@dimen/call_avatar_diameter</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:layout_height">@dimen/call_avatar_diameter</item>
+        <item name="android:padding">24dp</item>
+        <item name="android:src">@drawable/ic_person_big</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="RoundedImageButton">
+        <item name="android:layout_width">@dimen/call_buttons_diameter</item>
+        <item name="android:layout_height">@dimen/call_buttons_diameter</item>
+        <item name="android:padding">@dimen/call_buttons_padding</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="EndCallImageButton" parent="RoundedImageButton">
+        <item name="android:background">@drawable/selector_call_end</item>
+        <item name="android:src">@drawable/ic_phone_hangup</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+    </style>
+
+    <style name="TakeCallImageButton" parent="RoundedImageButton">
+        <item name="android:background">@drawable/selector_call_take</item>
+    </style>
+
+    <style name="ToolbarStyleCall">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
+    </style>
+
+
+    <style name="SeekBarPreferenceTitle" parent="WrapContent">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchHeight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WeightWidth">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="WeightHeight">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ListItem" parent="MatchWidth">
+        <item name="android:layout_height">?android:attr/listPreferredItemHeight</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+
+    <style name="FabStyle" parent="WrapContent">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:layout_marginBottom">@dimen/fab_margin_bottom</item>
+        <item name="android:layout_marginRight">@dimen/fab_margin_right</item>
+        <item name="android:layout_gravity">right|bottom</item>
+    </style>
+
+    <style name="ListViewWithoutDividerStyle" parent="MatchParent">
+        <item name="android:divider">@null</item>
+    </style>
+
+    <style name="BorderlessImageButtonStyle" parent="WrapContent">
+        <item name="android:background">@null</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:padding">@dimen/padding_common</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="CenterProgressBarStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+
+
+</resources>

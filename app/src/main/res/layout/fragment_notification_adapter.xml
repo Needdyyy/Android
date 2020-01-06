@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/white"
+    tools:context="com.needyyy.app.notifications.NotificationAdapter">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout1"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_pageprofile"
+            android:layout_width="@dimen/dp60"
+            android:visibility="visible"
+            android:layout_height="@dimen/dp60"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp10"
+
+            android:src="@drawable/gray_user" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="#000"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_toRightOf="@+id/img_pageprofile"
+            android:id="@+id/desc"
+            android:layout_marginTop="@dimen/dp20"
+            />
+         <TextView
+             android:layout_width="wrap_content"
+            android:layout_above="@+id/line"
+             android:layout_marginBottom="@dimen/dp5"
+             android:textColor="#000"
+             android:layout_alignParentRight="true"
+             android:textSize="@dimen/dp10"
+             android:layout_marginRight="@dimen/dp5"
+             android:id="@+id/time"
+             android:layout_height="wrap_content" />
+       <RelativeLayout
+           android:layout_marginLeft="@dimen/dp50"
+           android:layout_width="match_parent"
+           android:id="@+id/line"
+           android:layout_alignParentBottom="true"
+           android:background="#696969"
+           android:layout_height="0.5dp"></RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

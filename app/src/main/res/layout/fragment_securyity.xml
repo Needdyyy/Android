@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/windowbackground"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.needyyy.app.views.AppTextView
+            android:id="@+id/tv_changepin"
+            style="@style/MainScreenTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/pin"
+            android:drawablePadding="@dimen/dp15"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp15"
+            android:text="@string/change_pin" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@color/color_gray_bg"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.needyyy.app.views.AppTextView
+            android:id="@+id/tv_enablefingerprint"
+            style="@style/MainScreenTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/fingerprint_small"
+            android:drawablePadding="@dimen/dp15"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dp8"
+            android:padding="@dimen/dp15"
+
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:paddingTop="@dimen/dp8"
+            android:layout_weight="1"
+            android:text="@string/enable_fingerPrint" />
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="@dimen/dp15"-->
+<!--            >-->
+<!--            <com.needyyy.app.views.AppTextView-->
+<!--                android:id="@+id/tv_enablefingerprint"-->
+<!--                style="@style/MainScreenTextViewStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:drawableLeft="@drawable/fingerprint_small"-->
+<!--                android:drawablePadding="@dimen/dp15"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/enable_fingerPrint" />-->
+            <Switch
+                android:id="@+id/enablefingure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp5"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@color/color_gray_bg"/>
+
+        <com.needyyy.app.views.AppTextView
+            android:id="@+id/tv_changepassword"
+            style="@style/MainScreenTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="@dimen/dp15"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp15"
+            android:text="@string/change_password" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@color/color_gray_bg"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.needyyy.app.views.AppTextView
+                android:id="@+id/tv_notification_social"
+                style="@style/MainScreenTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/notifications"
+                android:drawablePadding="@dimen/dp15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dp8"
+                android:padding="@dimen/dp15"
+
+                android:paddingLeft="@dimen/dp15"
+                android:paddingRight="@dimen/dp15"
+                android:paddingTop="@dimen/dp8"
+                android:layout_weight="1"
+                android:text="@string/notifications" />
+            <Switch
+                android:id="@+id/notifiation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp5"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@color/color_gray_bg"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.needyyy.app.views.AppTextView
+                android:id="@+id/tv_privacy_social"
+                style="@style/MainScreenTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/privecy"
+                android:drawablePadding="@dimen/dp15"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dp8"
+                android:padding="@dimen/dp15"
+
+                android:paddingLeft="@dimen/dp15"
+                android:paddingRight="@dimen/dp15"
+                android:paddingTop="@dimen/dp8"
+                android:layout_weight="1"
+                android:text="@string/privacy" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="@dimen/dp10"
+                android:id="@+id/privacy"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rb_public"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/publictext"/>
+                <RadioButton
+                    android:id="@+id/rb_private"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privatetext"/>
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

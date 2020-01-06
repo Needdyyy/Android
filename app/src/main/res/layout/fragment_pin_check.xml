@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Modules.Login.Activities.LoginActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp50"
+        android:padding="16dp"
+        android:id="@+id/tv_title"
+        android:text="Enter Needyyy Pin"
+
+        android:textColor="@color/colorText_light_gray"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.needyyy.app.views.otpview.OtpView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:inputType="number"
+        android:textColor="@color/themecolor"
+        app:hideLineWhenFilled="false"
+        app:itemCount="4"
+        app:itemSpacing="@dimen/dp10"
+        app:lineColor="@color/otp_item_state"
+        app:state_filled="true"
+        app:viewType="line" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp50"
+        android:layout_marginLeft="15dp"
+        android:text="DONE"
+        android:id="@+id/btn_done"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_login_text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotpin"
+        android:text="Forgot Pin?"
+        android:layout_marginTop="@dimen/dp20"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="#000"
+        />
+</LinearLayout>

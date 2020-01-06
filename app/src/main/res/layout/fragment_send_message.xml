@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themecolor"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@color/colorAccent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/dp10"
+                android:id="@+id/img_back"
+                android:src="@drawable/arow"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/tv_title"
+                android:padding="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_toRightOf="@+id/img_back"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp5"
+                android:text="Knock Me"/>
+        </RelativeLayout>
+        <com.needyyy.app.views.CircleImageView
+        android:layout_width="@dimen/dp90"
+        android:layout_height="@dimen/dp90"
+        android:layout_gravity="center"
+        android:id="@+id/img_profile"
+        android:layout_marginTop="@dimen/dp10"
+        android:src="@drawable/needyy"/>
+        <!--<com.needyyy.app.views.BlurImageView-->
+            <!--android:id="@+id/img_profile"-->
+            <!--android:layout_width="@dimen/dp90"-->
+            <!--android:layout_height="@dimen/dp90"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
+            <!--android:src="@drawable/needyy"-->
+            <!--/>-->
+
+
+        <TextView
+            android:id="@+id/tv_profile_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_below="@+id/img_profile"
+            android:layout_marginBottom="@dimen/dp20"
+            android:background="@drawable/bg_white_curve"
+            android:padding="@dimen/dp5"
+            android:paddingStart="@dimen/dp20"
+            android:paddingEnd="@dimen/dp20"
+            android:text="AMRND266"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+
+
+    <com.needyyy.app.views.AppTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp20"
+        android:padding="@dimen/dp10"
+        android:text="@string/sendmessagetitle"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dp5">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp80"
+            android:hint="Type text..."
+            android:layout_gravity="top"
+            android:id="@+id/edt_message"
+            android:gravity="top"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/bg_white_curve"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="#333333" />
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_text"
+        android:layout_marginTop="@dimen/dp70"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:paddingTop="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:text="KNOCK ME"
+        android:id="@+id/tv_send_knock"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

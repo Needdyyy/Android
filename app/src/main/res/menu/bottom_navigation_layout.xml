@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nv_home"
+        android:icon="@drawable/home_active"
+        app:showAsAction="always"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/nv_knocks"
+        android:icon="@drawable/knocks_active"
+        app:showAsAction="always"
+        android:title="@string/knocks" />
+    <item
+        android:id="@+id/nv_post"
+        android:icon="@drawable/plus"
+        app:showAsAction="always"
+        android:title="@string/add_post" />
+    <item
+        android:id="@+id/nv_profile"
+        android:icon="@drawable/profile_active"
+        app:showAsAction="always"
+        android:title="@string/profile" />
+
+    <item
+        android:id="@+id/nv_feeeds"
+        android:icon="@drawable/feeds_active"
+        app:showAsAction="always"
+        android:title="@string/feeds" />
+
+</menu>

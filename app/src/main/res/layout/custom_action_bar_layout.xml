@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/chattext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="30dp"
+            android:layout_height="34dp"
+            android:background="@drawable/back_arrow"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/ivVideoCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/ic_video_call"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/ivAudioCall"/>
+
+
+        <ImageView
+            android:id="@+id/ivAudioCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:visibility="gone"
+            android:background="@drawable/ic_audio_call" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

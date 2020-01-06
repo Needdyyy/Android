@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nv_suggestion"
+        android:icon="@drawable/suggestions_active"
+        app:showAsAction="always"
+        android:title="@string/suggestion" />
+
+    <item
+        android:id="@+id/nv_myfriend"
+        android:icon="@drawable/my_friend_active_icon"
+        app:showAsAction="always"
+        android:title="@string/myfriend" />
+
+    <item
+        android:id="@+id/nv_knocks_dating"
+        android:icon="@drawable/knocks_active"
+        app:showAsAction="always"
+        android:title="@string/knocks" />
+
+    <item
+        android:id="@+id/nv_profile_dating"
+        android:icon="@drawable/profile_active"
+        app:showAsAction="always"
+        android:title="@string/profile" />
+
+</menu>

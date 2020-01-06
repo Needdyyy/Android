@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp250"
+        android:background="@color/colorAccent"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/profileCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp150"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        android:background="@drawable/bg_gray_stroke"
+        app:cardUseCompatPadding="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Name"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:drawableLeft="@drawable/birthday"
+                android:drawablePadding="@dimen/dp10"
+                android:textSize="18sp"
+                android:textColor="#727272" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gender"
+                android:drawableLeft="@drawable/gender"
+                android:drawablePadding="@dimen/dp10"
+                android:textSize="@dimen/dp18"
+                android:textColor="#727272" />
+
+            <TextView
+                android:id="@+id/tv_interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="interested in cricket"
+                android:drawableLeft="@drawable/cricket"
+                android:drawablePadding="@dimen/dp10"
+                android:textSize="@dimen/dp18"
+                android:textColor="#727272" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Less than a mile away"
+                android:drawableLeft="@drawable/nearby_friends"
+                android:drawablePadding="@dimen/dp10"
+                android:textSize="@dimen/dp18"
+                android:textColor="#727272" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/aboutCard"
+        android:layout_below="@+id/profileCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        android:background="@drawable/bg_gray_stroke"
+        app:cardUseCompatPadding="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/tv_about_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About me"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/text_color_lite"/>
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="about description"
+                android:drawablePadding="@dimen/dp10"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/dp10"
+                android:textColor="#727272" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImageProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="85dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/needyy"
+        android:elevation="10dp" />
+
+</RelativeLayout>

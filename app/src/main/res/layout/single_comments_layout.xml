@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp100"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp10"
+        android:padding="@dimen/dp5"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_marginLeft="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:id="@+id/img_profile"
+            android:src="@drawable/ic_launcher_background" />
+
+        <RelativeLayout
+            android:id="@+id/rv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surya Bihari Singh"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_username"
+                android:textColor="#333333"
+                android:maxLines="3"
+                android:id="@+id/tv_lastseen"
+                android:text="last chat here" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_reply"
+                    android:text="Reply" />
+
+                <TextView
+                    android:id="@+id/replycount"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:text="View Replies" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_delete"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="24dp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginTop="@dimen/dp5"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="Delete" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginTop="@dimen/dp5"-->
+                    <!--android:id="@+id/tv_hide"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="Hide"-->
+                    <!--/>-->
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/more1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/dots" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_gray_bg"
+        android:layout_marginLeft="@dimen/dp90"
+        android:layout_marginRight="@dimen/dp10"
+        android:id="@+id/footer"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

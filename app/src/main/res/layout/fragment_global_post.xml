@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_make_global_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tv_writesomething"
+        android:text="Make Your Global Post"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp10"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp18" />
+    <ImageView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/information"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dp10"
+        android:layout_margin="@dimen/dp15"
+        />
+
+
+    <EditText
+        android:id="@+id/tv_writesomething"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_below="@+id/tv_make_global_post"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/global_post_cardview"
+        android:padding="@dimen/dp10"
+        android:gravity="top"
+        android:hint="Write something here...." />
+
+
+    <RelativeLayout
+        android:layout_below="@+id/tv_writesomething"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_View"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp10">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

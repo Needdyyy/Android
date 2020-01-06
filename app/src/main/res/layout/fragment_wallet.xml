@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:color="@color/windowbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_itemtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tvbackgroudgray"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp15">
+        <com.needyyy.app.views.AppTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:text="@string/available_balance"
+            android:textStyle="bold" />
+        <com.needyyy.app.views.AppTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:id="@+id/tv_available_balance"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp40"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10">
+
+        <com.needyyy.app.views.AppEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edt_price"
+            android:inputType="number"
+            android:hint="@string/enteramount" />
+    </LinearLayout>
+
+    <com.needyyy.app.views.AppTextView
+        android:id="@+id/btn_addmoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_text"
+        android:layout_marginTop="@dimen/dp70"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:paddingTop="@dimen/dp10"
+        android:padding="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:text="Add Money"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+</LinearLayout>

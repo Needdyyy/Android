@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp10"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:id="@+id/item_view"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dp10"
+        android:id="@+id/radio_budget"
+        android:text="Rs. 180" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BUDGET 1 description"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_weight="1"
+        android:id="@+id/tv_targetuser"
+        android:textAlignment="viewEnd"
+        />
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+
+--This line, and those below, will be ignored--
+
+M    layout/activity_chat.xml
+M    layout/fragment_create_your_page.xml
+M    layout/list_recv_message.xml
+M    layout/list_send_message.xml
+M    layout/toolbar_chat.xml

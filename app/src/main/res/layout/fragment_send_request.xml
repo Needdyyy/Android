@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/themecolor"
+        android:paddingTop="@dimen/dp50"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/dp10"
+                android:src="@drawable/arow" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_toRightOf="@+id/img_back"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="Send Request"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.needyyy.app.views.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp120"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp25"
+            android:src="@drawable/needyy" />
+
+        <TextView
+            android:id="@+id/tv_profile_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_profile"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp20"
+            android:background="@drawable/bg_white_curve"
+            android:padding="@dimen/dp5"
+            android:paddingStart="@dimen/dp20"
+            android:paddingEnd="@dimen/dp20"
+            android:text="AMRND266"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_below="@+id/img_profile"
+        android:padding="@dimen/dp2"
+        android:paddingStart="@dimen/dp10"
+        android:paddingEnd="@dimen/dp20"
+        android:text="Female, 25"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/name_icon"
+        android:textColor="@android:color/black"
+        android:drawablePadding="10dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/interestedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_below="@+id/img_profile"
+        android:padding="@dimen/dp2"
+        android:paddingStart="@dimen/dp10"
+        android:drawableLeft="@drawable/gender"
+        android:paddingEnd="@dimen/dp20"
+        android:drawablePadding="10dp"
+        android:text="Female, 25"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tvopenDating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_below="@+id/img_profile"
+        android:padding="@dimen/dp2"
+        android:paddingStart="@dimen/dp10"
+        android:drawablePadding="10dp"
+        android:paddingEnd="@dimen/dp20"
+        android:text="Female, 25"
+        android:drawableLeft="@drawable/dating"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/dp10"
+        android:drawableLeft="@drawable/city"
+        android:layout_below="@+id/img_profile"
+        android:padding="@dimen/dp2"
+        android:paddingStart="@dimen/dp10"
+        android:paddingEnd="@dimen/dp20"
+        android:text="Female, 25"
+        android:drawablePadding="10dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:layout_below="@+id/tvAddress"
+        android:id="@+id/tv_send_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_text"
+        android:layout_marginTop="@dimen/dp70"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:paddingTop="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:text="Send Request"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/dp30"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
+</ScrollView>

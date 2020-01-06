@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp5"
+    android:layout_margin="@dimen/dp5"
+    android:background="@drawable/global_post_cardview">
+
+   <TextView
+       android:padding="@dimen/dp5"
+       android:id="@+id/tv_writesomething"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColor="@color/black"
+       android:text="There may be times when we are powerless to prevent injustice,but there must never be a timewhen we fail to protest" />
+
+    <TextView
+            android:id="@+id/tv_date"
+            android:layout_below="@+id/tv_writesomething"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="19,May 2019-03,june 2019"
+        android:visibility="gone"
+            android:layout_marginLeft="@dimen/dp10" />
+    <TextView
+        android:id="@+id/edit"
+        android:layout_below="@+id/tv_writesomething"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="Edit"
+        android:drawableLeft="@drawable/editblue"
+        android:textColor="@color/colorAccent"
+        android:drawablePadding="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp10" />
+
+
+
+    <TextView
+        android:id="@+id/tv_approved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_writesomething"
+        android:textColor="@color/approved"
+        android:gravity="end"
+        android:text="Approved"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10" />
+
+</RelativeLayout>

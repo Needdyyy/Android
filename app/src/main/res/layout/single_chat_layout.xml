@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dp5"
+    android:id="@+id/item_view"
+    android:background="@color/windowbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp10"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_profile_pic"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:src="@drawable/needyy"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="2dp" />
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/rl_online"
+                android:background="@drawable/circle_white">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                   android:layout_centerInParent="true"
+                    android:id="@+id/online_status"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/online_img" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/tv_profile_name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_chattext"
+                android:text="" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+        <TextView
+            android:id="@+id/tv_lastseen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/circle"
+            android:background="@drawable/online_img"
+            android:visibility="visible"
+            >
+            <TextView
+                android:gravity="center"
+                android:id="@+id/count"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="30dp"
+                android:text=""
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_gray_bg"
+        android:layout_marginLeft="@dimen/dp90"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_height="0.5dp"/>
+
+</LinearLayout>
